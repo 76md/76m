@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
     <title>76M</title>
   </head>
   
@@ -16,7 +18,9 @@
       <ul class="navbar-nav">
         <li class="logo">
           <a href="#" class="nav-link">
-            <span class="link-text logo-text">76M</span>
+            <img src="logo11.png"  class="link-text logo-text">
+              
+            
             <svg
               aria-hidden="true"
               focusable="false"
@@ -96,20 +100,44 @@
             
             
           <h1>Welcome to 76M</h1> 
-          <p>This is the content of section 1.</p>
+          <p class="right-align">an unit of 76mudfarm
+            <br><br>
+            <span style="font-weight:bolder">GSTIN: 33AADFZ1659B1ZE
+            </span>
+              <br><br>
+
+              Coporate office address :<br>
+               No 9, 1st floor, 4th street,<br>
+                Venkateswara Nagar, Adyar,<br>
+                 Chennai 600020
+<br>
+                Ph: 8148727650</p>
           
         </div>
+      </section>
+      <section id="sectionab">
+        <h1>WHO WE ARE</h1>
+        <p>"The practice of locating and selecting items for business needs 
+          is usually based on select criteria such as identifying required product,
+           addressing efficiencies, cost benefits, quality and reliability. Business
+            that can source the most appropriate supplier tend to develop a competitive
+             advantage over others in operating efficiency, improved branding ethos and team
+              wellness/hygiene.  At 76M, we step in for you in being “particular and selective 
+              “on all your material sourcing needs, thereby you can peacefully focus your 
+              precious time towards your business."</p>
+              <h3 style="text-align: right">-76mudfarm</h3>
+
       </section>
         
     
         <section id="section2">
           <div class="container">
-            <h1>House keeping</h1> 
+            <h1>House keeping Materials</h1> 
             <p>For use in Offices, IT companies, Universities, Schools, Hospitals, Hotels.</p>
             <br>
             <a href="/76M HK materials_c.pdf" class="button">
               <div class="button__content">
-                 <span class="button__text">Download</span>
+                 <span class="button__text">Catalogue</span>
                  <i class="ri-download-cloud-fill button__icon"></i>
   
                  <div class="button__reflection-1"></div>
@@ -133,7 +161,7 @@
             <br>
             <a href="76M HK Chemicals and Laundry.pdf" class="button">
               <div class="button__content">
-                 <span class="button__text">Download</span>
+                 <span class="button__text">Catalogue</span>
                  <i class="ri-download-cloud-fill button__icon"></i>
   
                  <div class="button__reflection-1"></div>
@@ -156,11 +184,11 @@
         <section id="section3">
           <div class="container">
             <h1>Hospital cleaners</h1> 
-            <p>For exclusive use in Hospitals, Hotels, Lodges, PG’s, Hostels.</p>
+            <p>For exclusive use in Hospitals, Clinics, Hygiene & Sanitation areas.</p>
             <br>
             <a href="/76M hospital cleaners.pdf" class="button">
               <div class="button__content">
-                 <span class="button__text">Download</span>
+                 <span class="button__text">Catalogue</span>
                  <i class="ri-download-cloud-fill button__icon"></i>
   
                  <div class="button__reflection-1"></div>
@@ -186,7 +214,7 @@
             <br>
             <a href="/76m stationary.pdf" class="button">
               <div class="button__content">
-                 <span class="button__text">Download</span>
+                 <span class="button__text">Catalogue</span>
                  <i class="ri-download-cloud-fill button__icon"></i>
   
                  <div class="button__reflection-1"></div>
@@ -208,11 +236,11 @@
         <section id="section5">
           <div class="container">
             <h1>commercial bedding</h1> 
-            <p>For exclusive use in Hospitals, Clinics, Hygiene & Sanitation areas.</p>
+            <p>For exclusive use in Hospitals, Hotels, Lodges, PG’s, Hostels.</p>
             <br>
             <a href="/76m Bedding.pdf" class="button">
               <div class="button__content">
-                 <span class="button__text">Download</span>
+                 <span class="button__text">Catalogue</span>
                  <i class="ri-download-cloud-fill button__icon"></i>
   
                  <div class="button__reflection-1"></div>
@@ -231,7 +259,31 @@
           </div>
         </section>
       </div>
+      <div class="icon" id="icon2">
+        <a href="mailto:support@76mudfarm.com"><img src="mail.jpg" style="width: 60px;height: 60px;"></a>
+      </div>
+
+      <div class="wrapper">
+      <div class="icon" id="icon1">
+        <a href="https://wa.me/918148727650"><img src="whatsapp.png" style="width: 60px;height: 60px;"></a>
+        
+      </div>
+      <div class="ani">
+        <p >For enquires and price list</p>
+      </div>
+    </div>
       
       </main>
+      <script>
+        const tl = gsap.timeline();
+        tl.from(" .nav-item, h1 , .bottom-section, .social-links,p,span,.button__icon", {
+          duration: 1,
+          y: 200,
+          opacity: 0,
+          stagger: {
+            amount: 0.59,
+          },
+        });
+      </script>
   </body>
 </html>
