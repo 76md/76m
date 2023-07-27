@@ -1,5 +1,9 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:wght@500&display=swap');
+
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -14,13 +18,13 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Montserrat", sans-serif;
+  --body-font:  "Kalam"; 
   --normal-font-size: 1rem;
 }
  
  :root {
     font-size: 19px;
-    font-family: Montserrat;
+    font-family: "Poppins", sans-serif;;
     --text-primary: #ffffff;
     --text-secondary: #2B2D42;
     --bg-primary: #3d7196;
@@ -34,8 +38,8 @@
   }
   
   body {
-    color:#32355a;
-    background-color: #fbf3ee;
+    color:#b4e0ff;
+    background-color: #5681a0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -81,7 +85,10 @@
   .nav-item {
     width: 100%;
   }
-  
+  p{
+    color: #ffffff;
+    padding: 30px ;
+  }
   
   
   .nav-link {
@@ -101,9 +108,9 @@
   }
   
   .link-text {
-    display: none;
+    
     margin-left: 0.5rem;
-    font-weight: bold;
+     
   }
   
   .nav-link svg {
@@ -190,9 +197,26 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    
+    
     
   }
+  #sectionab{
+    display: flex;
+    flex-direction: column;
+  }
+  #sectionab p{
+    text-align: justify;
+    padding: 20px 50px;
+  }
+  
+  #sectionab :last-child{
+    align-self:flex-end;
+    margin-right: 50px;
+  }
+  
+
+
   .container{
     text-transform: uppercase;
   }
@@ -205,13 +229,14 @@ body::-webkit-scrollbar-thumb {
   display: grid;
   place-items: center;
   
-  font-family: var(--body-font);
+ 
   font-size: var(--normal-font-size);
   
 }
 .button {
   position: relative;
   transition: transform .4s;
+  margin-top: -40px;
   
 }
 .button__content {
@@ -394,10 +419,74 @@ body::-webkit-scrollbar-thumb {
 .button:hover .button__triangle {
   transform: rotate(-12deg) scale(1.1);
 }
+#section1{
+  
+  
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+  
+  
+}
+#section1 h1{
+font-size: 3em;
+color: #b4e0ff;
+ margin: 0;
+  position: absolute;
+  top: 35%; /* Position the h1 tag at the middle of the container vertically */
+  left: 50%; /* Position the h1 tag at the middle of the container horizontally */
+  transform: translate(-50%, -50%); 
 
+
+
+
+}
+.right-align{
+  font-size: 0.9em;/* Change the font size of the p tag as needed */
+  position: absolute;
+  
+  top: 35%; /* Position the p tag at the middle of the container vertically */
+  left: 60%; /* Position the p tag at the middle of the container horizontally */
+  transform: translate(-50%, 10%); /* Shift the p tag 50% left and 50% down to align it correctly */
+  color: #ffffff; /* Set the text color for the p tag */
+  text-align: right; /* Align the text to the right */
+}
+
+.pright{
+  
+  left:80%
+}
+
+
+
+
+  
+  
+
+
+
+#section1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.5) ;
+  background-image: url('home.jpg');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9; 
+  z-index: -1;
+}
 #section2{
   position: relative;
-  
+  justify-content: center;
+    align-items: center;
+    text-align: center;
+    
   
 }
 #section2::before{
@@ -407,15 +496,18 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   width: 100%;
   height: 100%;
-  filter: brightness(0.6) ;
+  filter: brightness(0.5) ;
   background-image: url('hk.jpg');
   background-position: center;
   background-size: cover;
-  opacity: 0.6; 
+  opacity: 0.8; 
   z-index: -1;
 }
 #section3{
   position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   
   
 }
@@ -426,15 +518,18 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   width: 100%;
   height: 100%;
-  filter: brightness(0.6) ;
+  filter: brightness(0.4) ;
   background-image: url('hos.jpg');
   background-position: center;
   background-size: cover;
-  opacity: 0.6; 
+  opacity: 0.9; 
   z-index: -1;
 }
 #section4{
   position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   
   
 }
@@ -445,15 +540,18 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   width: 100%;
   height: 100%;
-  filter: brightness(0.6) ;
+  filter: brightness(0.5) ;
   background-image: url('sec4.jpg');
   background-position: center;
   background-size: cover;
-  opacity: 0.6; 
+  opacity: 0.8; 
   z-index: -1;
 }
 #section5{
   position: relative;   
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 #section5::before{
   content: '';
@@ -462,17 +560,82 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   width: 100%;
   height: 100%;
-  filter: brightness(.6) ;
+  filter: brightness(0.5) ;
   background-image: url('bed.jpg');
   background-position: center;
   background-size: cover;
-  opacity: 0.6; 
+  opacity: 0.9; 
   z-index: -1;
 }
 
+#icon1{
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 5%;
+  bottom: 15%;
+}
+.icon{
+    width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+}
+.icon img{
+  border-radius: 15px;
+  filter: brightness(0.9);
+  transition: 0.3s ease;
+}
+.icon img:hover{
+  filter: brightness(1);
+}
+.icon:hover{
+  
+  animation: slide 0.12s 5 linear;
+}
+@keyframes slide{
+  from{
+    rotate: 10deg;
+  }
+  to{
+    rotate: 0deg;
+  }
+}
+
+.ani p{
+  display: flex;
+  position: fixed;
+  font-size: 15;
+  color: black;
+  right: 10%;
+  bottom: 13%;
+  
+  background: #bcd4e6;
+  padding: 15px 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+ 
+  
+}
+.ani p::before{
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #bcd4e6;
+  transform: rotate(45deg) translateY(-50%);
+  top: 45%;
+  right: -1px;
+
+}
+
+
+
 /*small screen*/
   
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px)  {
   .navbar {
     bottom:0;
     width: 100vw;
@@ -501,16 +664,20 @@ body::-webkit-scrollbar-thumb {
     display: none;
   }
   h1{
-    font-size: 1rem;
-    text-shadow: 1px 1px 1px;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    
   }
   p{
     font-size: 0.7rem;
-    text-shadow: 1px 1px 1px;
+    
   }
   .button {
     font-size: 12px;
     
+  }
+  .right-align{
+    font-size: 0.7em;;
   }
   
 
@@ -529,6 +696,30 @@ body::-webkit-scrollbar-thumb {
   img{
     width: 10px;
   }
+  .icon{
+    width: 50px;
+  height: 50px;
+  position: fixed;
+  right:  5%;
+  bottom: 15%;
+}
+#icon1{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 5%;
+  bottom: 25%;
+}
+.ani p{
+right:  20%;
+bottom: 25%;
+padding: 10px 10px;
+margin: 0;
+
+}
+
+
+
 }
 
 
@@ -541,6 +732,11 @@ body::-webkit-scrollbar-thumb {
 
   .navbar:hover {
     width: 16rem;
+  }
+  h1{
+    
+
+    font-family: var(--body-font);
   }
 
   .navbar:hover .link-text {
@@ -556,4 +752,5 @@ body::-webkit-scrollbar-thumb {
   {
     left: 0px;
   }
+ 
 }
