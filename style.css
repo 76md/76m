@@ -431,7 +431,7 @@ body::-webkit-scrollbar-thumb {
   
 }
 #section1 h1{
-font-size: 2.7em;
+font-size: 3em;
 color: #b4e0ff;
  margin: 0;
   position: absolute;
@@ -447,7 +447,7 @@ color: #b4e0ff;
   font-size: 0.9em;/* Change the font size of the p tag as needed */
   position: absolute;
   
-  top: 35%; /* Position the p tag at the middle of the container vertically */
+  top: 45%; /* Position the p tag at the middle of the container vertically */
   left: 60%; /* Position the p tag at the middle of the container horizontally */
   transform: translate(-50%, 10%); /* Shift the p tag 50% left and 50% down to align it correctly */
   color: #ffffff; /* Set the text color for the p tag */
