@@ -650,6 +650,7 @@ color: #b4e0ff;
   .button:hover .button__triangle {
     transform: rotate(-12deg) scale(0.8);
   }
+  
 
   .logo {
     display: none;
@@ -665,15 +666,18 @@ color: #b4e0ff;
   }
   h1{
     font-family: var(--body-font);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    margin-bottom: -20px;
     
   }
   p{
     font-size: 0.7rem;
+    padding: 15px 10px;
     
   }
   .button {
     font-size: 12px;
+    margin-bottom: -50px;
     
   }
   .right-align{
@@ -734,10 +738,14 @@ margin: 0;
     width: 16rem;
   }
   h1{
-    
+    margin-bottom: -40px;
 
     font-family: var(--body-font);
   }
+  section{
+    flex-wrap: wrap;
+  }
+
 
   .navbar:hover .link-text {
     display: inline;
